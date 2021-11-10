@@ -1,14 +1,25 @@
-// import StarRating from "./starRating";
-import StarRating from "./practice/starRating";
+import React, { useState } from "react";
+import colorData from "./color-data.json";
+import ColorList from "./colorList";
 
-function App() {
+const App = (props) => {
+  const [colors, setColors] = useState(colorData.colors);
+
   return (
-    // <StarRating
-    //   style={{ backgroundColor: "lightblue" }}
-    //   onDoubleClick={(e) => alert("double click")}
-    // />
-    <StarRating />
+    <ColorList
+      colors={colors}
+      onRateColor={(id, rating) => {
+        const newColors = colors.map((color) =>
+          color.id === id ? { ...color, rating } : color
+        );
+        setColors(newColors);
+      }}
+      onRemoveColor={(id) => {
+        const newColors = colors.filter((color) => color.id !== id);
+        setColors(newColors);
+      }}
+    />
   );
-}
+};
 
 export default App;
