@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script>
+      var dish = React.createElement("h1", null, "구운 연어");
+
+      const list = React.createElement(
+        "ul",
+        null,
+        React.createElement("li", null, "연어 900그램"),
+        React.createElement("li", null, "연어 900그램"),
+        React.createElement("li", null, "연어 900그램"),
+        React.createElement("li", null, "연어 900그램"),
+        React.createElement("li", null, "연어 900그램"),
+        React.createElement("li", null, "연어 900그램")
+      );
+      console.log(list);
+
+      const items = [
+        "연어 900 그램",
+        "신선한 로즈마리 5가지",
+        "올리브 오일 2 테이블 스푼",
+        "작은 레몬 2 조각",
+        "코셔 소금 1 티스푼",
+        "다진 마늘 4 쪽",
+      ];
+
+      const list2 = React.createElement(
+        "ul",
+        { className: "ingredients" },
+        items.map((ingredient, i) =>
+          React.createElement("li", { key: i }, ingredient)
+        )
+      );
+      console.log(list2);
+      //ReactDOM.render(list2, document.getElementById("root"));
+
+      function IngredientsList(props) {
+        return React.createElement(
+          "ul",
+          { className: "ingredients" },
+          props.items.map((ingredient, i) =>
+            React.createElement("li", { key: i }, ingredient)
+          )
+        );
+      }
+
+      const secretIngredients = [
+        "무염 버터",
+        "무염 버터",
+        "무염 버터",
+        "무염 버터",
+        "무염 버터",
+      ];
+
+      ReactDOM.render(
+        React.createElement(
+          IngredientsList,
+          { items: secretIngredients },
+          null
+        ),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
