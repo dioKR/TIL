@@ -72,3 +72,10 @@ btn.addEventListener("click", function () {
 
 // addEventListener : 캡처링과 버블링 방지!
 ```
+
+<br>
+
+## 👉🏻 &nbsp; 이벤트 캡처링과 이벤트 버블링
+
+- 이벤트 캡처링 : DOM의 부모 노드에서 자식 노드로 전달 되는 것
+- 이벤트 버블링 : DOM의 자식 노드에서 부모 노드로 전달 되는 것
