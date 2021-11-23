@@ -79,3 +79,19 @@ btn.addEventListener("click", function () {
 
 - 이벤트 캡처링 : DOM의 부모 노드에서 자식 노드로 전달 되는 것
 - 이벤트 버블링 : DOM의 자식 노드에서 부모 노드로 전달 되는 것
+
+<br>
+
+## 👉🏻 &nbsp; DOM에서 노드 추가-삭제하기
+
+- 요소 노드 만들기
+  - ⭐️ &nbsp; document.createElement(태그);
+- 속성 노드 만들기
+  - ⭐️ &nbsp; document.createAttribute(속성명);
+- 텍스트 노드 만들기
+  - document.createTextNode(텍스트);
+- 자식 노드 연결하기
+  - 부모노드.appendChild(자식노드);
+- 노드 삭제 하기
+  1. 부모노드 찾기 : 노드.parentNode
+  2. 부모노드에서 해당노드 삭제 : ⭐️ &nbsp; 부모노드.removeChild(자식노드);
