@@ -93,10 +93,6 @@ doSomething(인수);
 
 ## 🔥 Array
 
-<hr>
-
-<br>
-
 ### 👉🏻 &nbsp; Array 객체 메서드
 
 흰색 : 원본 배열을 유지하는 메서드 <br> <span style="color: skyblue"> 파란색
