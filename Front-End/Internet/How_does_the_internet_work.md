@@ -12,40 +12,40 @@
 
 #### 단순한 네트워크
 
-<img src="./internet-schema-1.png"/>
+<img src="./How_does_the_internet_work/internet-schema-1.png"/>
 
 - 두 개의 컴퓨터가 통신을 위해서 물리적으로 또는 무선으로 연결된 것
 
-<img src="./internet-schema-2.png"/>
+<img src="./How_does_the_internet_work/internet-schema-2.png"/>
 
 - 네트워크는 두 대의 컴퓨터로 제한되지 않는다.
 - 원하는 만큼 컴퓨터를 연결할 수 있다.
 - 하지만 연결이 많아질 수록 복잡해지고 케이블이 많이 필요해진다.
 
-<img src="./internet-schema-3.png"/>
+<img src="./How_does_the_internet_work/internet-schema-3.png"/>
 
 - 선이 많아지고 복잡해지는 문제를 해결하기 위해
 - 네트워크의 각 컴퓨터는 라우터라고 하는 특수한 소형 컴퓨터에 연결
 
 #### 네트워크 속의 네트워크
 
-<img src="./internet-schema-4.png"/>
+<img src="./How_does_the_internet_work/internet-schema-4.png"/>
 
 - 라우터의 경우도 컴퓨터이기 때문에 두 대의 라우터를 연결할 수 있다.
 
-<img src="./internet-schema-5.png" />
+<img src="./How_does_the_internet_work/internet-schema-5.png" />
 
 - 컴퓨터를 라우터에 연결하고, 라우터에서 라우터로, 무한히 확장할 수 있다.
 - 하지만 이러한 케이블 연결에는 거리의 한계가 있다.
 - 아주 먼 곳에 있는 네트워크와 연결을 하는 방법은 무엇일까?
 
-<img src="./internet-schema-6.png" />
+<img src="./How_does_the_internet_work/internet-schema-6.png" />
 
 - 전화기 기반의 시설은 서계 어느 곳과 연결이 되어 있다.
 - 모뎀을 이용한 네트워크와 전화 시설을 연결
 - 모뎀은 네트워크의 정보를 전화 시설에서 처리 할 수 있는 정보로 바꾸며 전화 시설의 정보를 네트워크 정보로 바꾸는 기능을 담당
 
-<img src="./internet-schema-7.png" />
+<img src="./How_does_the_internet_work/internet-schema-7.png" />
 
 - 모뎀을 통해서 전화 시설에 연결되고,
 - 네트워크에서 다른 네트워크로 메시지를 보내기 위해서
@@ -61,7 +61,7 @@
 - ISP란 집이나 사업장에 유로로 인터넷을 제공하는 공급자를 뜻한다.
 - ISP는 3개의 계층을 갖는다.
 
-<img src="./1tier.png" />
+<img src="./How_does_the_internet_work/1tier.png" />
 
 1. 1티어 ISP
 
@@ -81,14 +81,14 @@
 - 3티어 ISP는 인터넷 전송을 구매하는 제공 업체
 - 즉 우리가 흔히 사용하는 인터넷을 제공해주는 ISP이며 접속 ISP라고도 한다.
 
-<img src="./isp.png" />
+<img src="./How_does_the_internet_work/isp.png" />
 
 - 인터넷을 사용하는 사용자들은 Tier-3 ISP를 통해 연결
 - Tier-3 ISP는 Tier-2 ISP를 통해 Tier-1과 연결
 
 #### IP와 DNS
 
-<img src="./dns-ip.png" />
+<img src="./How_does_the_internet_work/dns-ip.png" />
 - 컴퓨터에 메시지를 보내려면 메시지를 받을 특정 컴퓨터를 지정해야 한다.
 - 따라서 네트워크에 연결된 모든 컴퓨터에는 IP주소라는 고유한 주소가 존재
 - 인터넷 주소는 nnn.nnn.nnn.nnn 형식이다.
