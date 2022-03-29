@@ -102,6 +102,26 @@
 
 - "GET" 요청에 대한 성공적인 HTTP response에는 일반적으로 요청된 정보가 포함된 body가 존재
 
+## HTTP/1.0
+
+## HTTP/1.1
+
+## HTTP/2
+
+<img src="What_is_HTTP/http_2.webp" />
+
+- 바이너리 프레이밍 계층을 사용해 요청과 응답의 멀티플렉싱을 지원
+- HTTP 메시지를 바이너리 형태의 프레임으로 나누고 이를 전송 후 받은 쪽에서 다시 조립
+- 요청과 응답이 동시에 이루어지니 하나의 연결에 여러 요청과 응답이 뒤섞임
+- 프레이밍 작업은 서버와 클라이언트에서 진행
+- 요청 우선순위 지정 가능
+- 헤더를 압축하여 오버헤드를 줄이고 클라이언트가 명시적 요청을 하지 않아도 필요한 리소스를 미리 푸시하여 응답시간을 줄이는 서버 푸시 기능 추가
+
+## HTTPS
+
+- HyperText Transfer Protocol Secure
+-
+
 # References
 
 - https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/
@@ -111,3 +131,5 @@
 - https://kamranahmed.info/blog/2016/08/13/http-in-depth/
 
 - https://joshua1988.github.io/web-development/http-part1/
+
+- https://www.whatap.io/ko/blog/38/
