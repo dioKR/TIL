@@ -128,6 +128,20 @@
 
 <img src="./Browsers_and_how_they_work/helloworld-59361-9.png" />
 
+<img src="./Browsers_and_how_they_work/helloworld-59361-10.png" />
+
+## 렌더 트리 구축
+
+- DOM 트리가 구축되는 동안 브라우저는 렌더 트리를 구축한다.
+- 파이어폭스는 이 구성 요소를 "형상(frames)" 이라고 부름
+- 웹킷은 "렌더러(renderer)"라고 부른다.
+
+## DOM 트리와 렌더 트리의 관계
+
+- 렌더러는 DOM 요소에 부합하지만 1:1로 대응하는 관계는 아님.
+
+<img src="./Browsers_and_how_they_work/helloworld-59361-13.png" />
+
 # References
 
 - https://d2.naver.com/helloworld/59361
